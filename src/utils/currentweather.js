@@ -4,7 +4,7 @@ const KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
 
 async function getCurrentWeather(city) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=${KEY}&q=${city}`,
+    `https://api.weatherapi.com/v1/current.json?key=${KEY}&q=${city}`,
     {
       method: "GET",
     },
